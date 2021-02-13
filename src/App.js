@@ -2,20 +2,33 @@ import "./App.css";
 import React, { Component } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
+import StoleMyHeart from "./Images/StoleMyHeart.PNG";
+import Cheeks from "./Images/Cheeks.PNG";
+import OGSelfieTOgether from "./Images/OGSelfieTOgether.jpg";
+import UsPear from "./Images/UsPEar.jpg";
+import DogsCuddling from "./Images/DogsCuddloin.JPG";
+import Bracelet from "./Images/GraceBracelet.PNG";
+import Selfie from "./Images/GraceSelfie.PNG";
+import Fart from "./Images/GraceDukeFart.PNG";
+import Jump from "./Images/GraceJumping.PNG";
+import RA from "./Images/RAA.JPG";
+import Squad from "./Images/MeGraceDuke.PNG";
+import GRACEEEEE from "./Images/GRACEEEEE.PNG";
+import ANGRY from "./Images/angry.PNG";
 
 class App extends Component {
   toggle = true;
   constructor(props) {
     super(props);
     this.state = {
-      src: `../Images/GRACEEEEE.png`,
+      src: GRACEEEEE,
       toggleText: "Happy Valentine's Day buddy <3 I Love you",
     };
     this.pictureToggleClick = this.pictureToggleClick.bind(this);
   }
   pictureToggleClick(e) {
     this.setState({
-      src: this.toggle ? `../Images/angry.png` : `../Images/GRACEEEEE.png`,
+      src: this.toggle ? ANGRY : GRACEEEEE,
       toggleText: this.toggle
         ? "Rawr XD"
         : "Happy Valentine's Day buddy <3 I Love you",
@@ -29,22 +42,14 @@ class App extends Component {
         <h1 className="Header">HAPPY VALENTINE'S DAY</h1>
         <Carousel interval={null} indicators={false}>
           <Carousel.Item>
-            <img
-              className="cImage"
-              src={`../Images/Cheeks.png`}
-              alt="First slide"
-            />
+            <img className="cImage" src={Cheeks} alt="First slide" />
             <p className="Caption">
               Happy Valentine's day beautiful! Hit the arrow on the right side
               of the screen (:
             </p>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="cImage"
-              src={`../Images/StoleMyHeart.png`}
-              alt="First slide"
-            />
+            <img className="cImage" src={StoleMyHeart} alt="First slide" />
             <p className="Caption">
               It's safe to say you stole my heart from day 1. I'll never forget
               how nervous I was to approach you and really get to know you, but
@@ -52,11 +57,7 @@ class App extends Component {
             </p>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="cImage"
-              src={`../Images/OGSelfieTOgether.jpg`}
-              alt="First slide"
-            />
+            <img className="cImage" src={OGSelfieTOgether} alt="First slide" />
             <p className="Caption">
               Despite me awkwardly tapping you as I zoomed past you every
               warmup, we started to get to know eachother. We bonded over our
@@ -64,11 +65,7 @@ class App extends Component {
             </p>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="cImage"
-              src={`../Images/UsPEar.jpg`}
-              alt="First slide"
-            />
+            <img className="cImage" src={UsPear} alt="First slide" />
             <p className="Caption">
               You put up with me being stupid and awkward, and eventually we
               became best friends. You quickly became my favorite person ever
@@ -76,11 +73,7 @@ class App extends Component {
             </p>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="cImage"
-              src={`../Images/DogsCuddloin.jpg`}
-              alt="First slide"
-            />
+            <img className="cImage" src={DogsCuddling} alt="First slide" />
             <p className="Caption">
               It was surreal. How could I get such a beautiful, smart, funny,
               kind, goofy, loving, athletic, no BS girl like you. It's like I
@@ -88,11 +81,7 @@ class App extends Component {
             </p>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="cImage"
-              src={`../Images/GraceBracelet.png`}
-              alt="First slide"
-            />
+            <img className="cImage" src={Bracelet} alt="First slide" />
             <p className="Caption">
               I've never had such a serious and real relationship like ours that
               I could never go to anything else. You make the happiest person
@@ -104,11 +93,7 @@ class App extends Component {
             </p>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="cImage"
-              src={`../Images/GraceSelfie.png`}
-              alt="First slide"
-            />
+            <img className="cImage" src={Selfie} alt="First slide" />
             <p className="Caption">
               You are so so beautiful and amazing that words can't possibly
               describe any of it. You're everything I have ever dreamed of and
@@ -118,31 +103,19 @@ class App extends Component {
             </p>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="cImage"
-              src={`../Images/GraceDukeFart.png`}
-              alt="First slide"
-            />
+            <img className="cImage" src={Fart} alt="First slide" />
             <p className="Caption">
               You could smell like a Duke fart and I'd still love you the same.
             </p>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="cImage"
-              src={`../Images/GraceJumping.png`}
-              alt="First slide"
-            />
+            <img className="cImage" src={Jump} alt="First slide" />
             <p className="Caption">
-              You make jump for joy (it translates into Just Dance success)
+              You make me jump for joy (it translates into Just Dance success)
             </p>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="cImage"
-              src={`../Images/RAA.jpg`}
-              alt="First slide"
-            />
+            <img className="cImage" src={RA} alt="First slide" />
             <p className="Caption">
               I can't wait to make more memories with you. We have so much ahead
               in life that I (almost) can't wait. It's hard to not enjoy what I
@@ -151,11 +124,7 @@ class App extends Component {
             </p>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="cImage"
-              src={`../Images/MeGraceDuke.png`}
-              alt="First slide"
-            />
+            <img className="cImage" src={Squad} alt="First slide" />
             <p className="Caption">
               Grace Elizabeth Klein I love you so so much and I hope I'm being
               the best boyfriend I can be. If I'm not you need to let me know
